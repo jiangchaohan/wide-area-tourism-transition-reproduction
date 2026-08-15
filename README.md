@@ -34,4 +34,4 @@ No author names, affiliations, email addresses or direct personal identifiers ar
 
 ## Availability
 
-Repository URL: REPOSITORY_URL_PLACEHOLDER
+Repository URL: https://github.com/jiangchaohan/wide-area-tourism-transition-reproduction
