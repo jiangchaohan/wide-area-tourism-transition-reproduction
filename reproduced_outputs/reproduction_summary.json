@@ -1,0 +1,16 @@
+{
+  "modeling_routes": 33269,
+  "dated_modeling_routes": 33266,
+  "training_routes": 23286,
+  "validation_routes": 4990,
+  "test_routes": 4990,
+  "test_transitions": 112827,
+  "selected_weights": {
+    "observed": 0.8,
+    "spatial": 0.1,
+    "two_step": 0,
+    "attraction_pull": 0.1
+  },
+  "candidate_cutoff": 10,
+  "stationary_equation_l1_residual": 3.09785382326894e-05
+}

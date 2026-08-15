@@ -1,0 +1,21 @@
+{
+  "raw_route_records": 36347,
+  "modeling_routes": 33269,
+  "dated_modeling_routes": 33266,
+  "attraction_states": 1034,
+  "observed_nonzero_edges": 16555,
+  "observed_transition_count": 736897,
+  "training_routes": 23286,
+  "validation_routes": 4990,
+  "test_routes": 4990,
+  "test_transitions": 112827,
+  "first_order_hit_at_10": 0.783429,
+  "first_order_ndcg_at_10": 0.527062,
+  "final_candidate_cutoff": 10,
+  "selected_weights": {
+    "observed": 0.8,
+    "spatial": 0.1,
+    "two_step": 0.0,
+    "attraction_pull": 0.1
+  }
+}

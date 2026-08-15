@@ -1,0 +1,14 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "modeling_routes": true,
+    "dated_modeling_routes": true,
+    "training_routes": true,
+    "validation_routes": true,
+    "test_routes": true,
+    "test_transitions": true,
+    "first_order_hit_at_10": true,
+    "first_order_ndcg_at_10": true,
+    "candidate_cutoff": true
+  }
+}

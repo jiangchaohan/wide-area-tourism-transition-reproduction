@@ -1,0 +1,27 @@
+{
+  "repository_url": "REPOSITORY_URL_PLACEHOLDER",
+  "raw_parts": [
+    {
+      "file": "data/raw/Supplementary_Data_S1_Raw_Route_Records_Part_01.xlsx",
+      "bytes": 19587538,
+      "sha256": "fa5a3b17d298525f6e3b2d3c4a52d155d37282779242abfa3ea8882b9c7d30e6"
+    },
+    {
+      "file": "data/raw/Supplementary_Data_S1_Raw_Route_Records_Part_02.xlsx",
+      "bytes": 15603770,
+      "sha256": "2d39b7a7796cb8c57fe8acd17debf0e4f096a7e0dd76622aa387b6ad2c96a6de"
+    },
+    {
+      "file": "data/raw/Supplementary_Data_S1_Raw_Route_Records_Part_03.xlsx",
+      "bytes": 45613891,
+      "sha256": "be98c96527fab2eacaf7172773bdc925e8b09aab476955e3d29353d239791d60"
+    },
+    {
+      "file": "data/raw/Supplementary_Data_S1_Raw_Route_Records_Part_04.xlsx",
+      "bytes": 1561141,
+      "sha256": "8ca1742b2208be5bc1ec49f6c854f28f9cdd2ed706651ae6038acd2f4942fd5c"
+    }
+  ],
+  "reproduction_command": "python code/run_reproduction.py --package-root .",
+  "verification_command": "python code/verify_reproduction.py --package-root ."
+}

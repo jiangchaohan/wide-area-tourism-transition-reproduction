@@ -1,0 +1,5 @@
+Supplementary Data S1. Original route records supplied for confidential peer review. The Chinese source text is retained to preserve provenance and auditability.
+Supplementary Data S2. Cleaned and standardized route sequences used to construct the modeling sample.
+Supplementary Data S3. Attraction-state dictionary, observed directed transitions, entity-review log and removed-node audit.
+Supplementary Data S4. Data splits, model comparisons, parameter search, ablation tests, stationary-distribution diagnostics and route-candidate outputs.
+Supplementary Code S1. Reproduction workflow for matrix construction, validation, model comparison and result export.
