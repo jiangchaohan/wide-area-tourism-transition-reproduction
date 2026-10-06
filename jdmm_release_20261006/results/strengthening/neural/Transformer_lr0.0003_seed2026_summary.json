@@ -1,0 +1,13 @@
+{
+  "model": "Transformer",
+  "learning_rate": 0.0003,
+  "seed": 2026,
+  "best_epoch": 30,
+  "epochs_run": 30,
+  "best_validation_NDCG@10": 0.5850515246978745,
+  "elapsed_seconds": 500.4644637107849,
+  "max_epochs": 30,
+  "patience": 5,
+  "checkpoint_selection": "validation NDCG@10 only",
+  "test_used_for_tuning": false
+}

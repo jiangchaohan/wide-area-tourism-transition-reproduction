@@ -1,0 +1,193 @@
+{
+  "split": {
+    "train": {
+      "routes": 16601,
+      "events": 402440,
+      "first_date": "2017-07-13",
+      "last_date": "2019-12-31"
+    },
+    "validation": {
+      "routes": 1246,
+      "events": 15326,
+      "first_date": "2020-01-01",
+      "last_date": "2020-06-30"
+    },
+    "test": {
+      "routes": 2576,
+      "events": 42687,
+      "first_date": "2020-07-01",
+      "last_date": "2020-12-31"
+    }
+  },
+  "tuning": {
+    "VOM": {
+      "selected_support": 1,
+      "trials": [
+        {
+          "support": 1,
+          "validation_NDCG@10": 0.5739430264860604,
+          "test_NDCG@10": 0.5589739974366681,
+          "contexts_used": 10836
+        },
+        {
+          "support": 2,
+          "validation_NDCG@10": 0.5734902764965573,
+          "test_NDCG@10": 0.5592258728528178,
+          "contexts_used": 6660
+        },
+        {
+          "support": 3,
+          "validation_NDCG@10": 0.5726982067690812,
+          "test_NDCG@10": 0.559123545669665,
+          "contexts_used": 5232
+        },
+        {
+          "support": 5,
+          "validation_NDCG@10": 0.5719742126754007,
+          "test_NDCG@10": 0.5583067712647392,
+          "contexts_used": 3887
+        },
+        {
+          "support": 10,
+          "validation_NDCG@10": 0.5706363723708081,
+          "test_NDCG@10": 0.5572747195918526,
+          "contexts_used": 2670
+        },
+        {
+          "support": 20,
+          "validation_NDCG@10": 0.5662475690496025,
+          "test_NDCG@10": 0.5531456746157501,
+          "contexts_used": 1797
+        },
+        {
+          "support": 50,
+          "validation_NDCG@10": 0.5617073883070651,
+          "test_NDCG@10": 0.5492764954619689,
+          "contexts_used": 1000
+        },
+        {
+          "support": 100,
+          "validation_NDCG@10": 0.5589389024412744,
+          "test_NDCG@10": 0.5430527915490869,
+          "contexts_used": 594
+        }
+      ]
+    },
+    "TD-VOM": {
+      "selected_support": 1,
+      "trials": [
+        {
+          "support": 1,
+          "validation_NDCG@10": 0.5743212733536478,
+          "test_NDCG@10": 0.5590680865024344,
+          "contexts_used": 10832
+        },
+        {
+          "support": 2,
+          "validation_NDCG@10": 0.5724314285035711,
+          "test_NDCG@10": 0.5591040516429996,
+          "contexts_used": 6434
+        },
+        {
+          "support": 3,
+          "validation_NDCG@10": 0.571380657154776,
+          "test_NDCG@10": 0.5590903063173769,
+          "contexts_used": 5014
+        },
+        {
+          "support": 5,
+          "validation_NDCG@10": 0.5711889710385296,
+          "test_NDCG@10": 0.5580139962987468,
+          "contexts_used": 3648
+        },
+        {
+          "support": 10,
+          "validation_NDCG@10": 0.5696464362351518,
+          "test_NDCG@10": 0.5554955834203362,
+          "contexts_used": 2434
+        },
+        {
+          "support": 20,
+          "validation_NDCG@10": 0.5661936158619069,
+          "test_NDCG@10": 0.5529691263091473,
+          "contexts_used": 1579
+        },
+        {
+          "support": 50,
+          "validation_NDCG@10": 0.5625492421357775,
+          "test_NDCG@10": 0.5457653794034586,
+          "contexts_used": 838
+        },
+        {
+          "support": 100,
+          "validation_NDCG@10": 0.5577292699395007,
+          "test_NDCG@10": 0.5394749899901403,
+          "contexts_used": 490
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "F1": {
+      "events": 42687,
+      "routes": 2576,
+      "Hit@5": 0.6462857544451472,
+      "Hit@10": 0.7642842083069787,
+      "MRR@10": 0.439507762483727,
+      "NDCG@10": 0.517575287677944,
+      "macro_route_NDCG@10": 0.5119858275626864,
+      "macro_template_NDCG@10": 0.4991191154680292,
+      "catalog_coverage@10": 0.39264990328820115,
+      "long_tail_events": 3249,
+      "long_tail_Hit@10": 0.26408125577100644
+    },
+    "W1": {
+      "events": 42687,
+      "routes": 2576,
+      "Hit@5": 0.6487689460491485,
+      "Hit@10": 0.7639093869327899,
+      "MRR@10": 0.44112286890064667,
+      "NDCG@10": 0.5186753657243436,
+      "macro_route_NDCG@10": 0.513780631279646,
+      "macro_template_NDCG@10": 0.5015414906862402,
+      "catalog_coverage@10": 0.38781431334622823,
+      "long_tail_events": 3249,
+      "long_tail_Hit@10": 0.24315173899661435
+    },
+    "VOM": {
+      "events": 42687,
+      "routes": 2576,
+      "Hit@5": 0.6861339517886007,
+      "Hit@10": 0.7949024293110315,
+      "MRR@10": 0.4841684729115328,
+      "NDCG@10": 0.5589739974366681,
+      "macro_route_NDCG@10": 0.5460345310656571,
+      "macro_template_NDCG@10": 0.5281455890342471,
+      "catalog_coverage@10": 0.5174081237911026,
+      "long_tail_events": 3249,
+      "long_tail_Hit@10": 0.33641120344721454
+    },
+    "TD-VOM": {
+      "events": 42687,
+      "routes": 2576,
+      "Hit@5": 0.685032914001921,
+      "Hit@10": 0.7920209899969546,
+      "MRR@10": 0.4850299020444498,
+      "NDCG@10": 0.5590680865024344,
+      "macro_route_NDCG@10": 0.5434671372056509,
+      "macro_template_NDCG@10": 0.5286055414881371,
+      "catalog_coverage@10": 0.511605415860735,
+      "long_tail_events": 3249,
+      "long_tail_Hit@10": 0.32132963988919666
+    }
+  },
+  "elapsed_seconds": 12.196065187454224,
+  "training_successor_frequency": {
+    "observed_states": 768,
+    "zero_frequency_states": 266,
+    "observed_atmost5": 304,
+    "observed_atmost10": 373,
+    "atmost10_including_zero": 639,
+    "long_tail_positive80percentile": 194.60000000000014
+  }
+}

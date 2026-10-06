@@ -1,0 +1,311 @@
+{
+  "runtime": {
+    "torch": "2.7.1+cu126",
+    "numpy": "2.3.5",
+    "device": "cuda"
+  },
+  "protocol": {
+    "dimension": 64,
+    "max_prefix": 40,
+    "training_stride": 30,
+    "overlap_context": 10,
+    "batch_size": 128,
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "learning_rate_grid": [
+      0.001,
+      0.0003
+    ],
+    "max_epochs": 30,
+    "patience": 5,
+    "hyperparameter_selection": "validation only",
+    "implementation": "local GRU and causal Transformer; not official GRU4Rec/SASRec implementations"
+  },
+  "tuning": [
+    {
+      "model": "GRU",
+      "learning_rate": 0.001,
+      "seed": 2026,
+      "best_epoch": 29,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.6145750542873832,
+      "elapsed_seconds": 334.2162139415741,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false
+    },
+    {
+      "model": "GRU",
+      "learning_rate": 0.0003,
+      "seed": 2026,
+      "best_epoch": 30,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.5979585954090484,
+      "elapsed_seconds": 257.8488302230835,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false
+    },
+    {
+      "model": "Transformer",
+      "learning_rate": 0.001,
+      "seed": 2026,
+      "best_epoch": 29,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.6109170870554298,
+      "elapsed_seconds": 667.7406346797943,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false
+    },
+    {
+      "model": "Transformer",
+      "learning_rate": 0.0003,
+      "seed": 2026,
+      "best_epoch": 30,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.5850515246978745,
+      "elapsed_seconds": 500.4644637107849,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false
+    }
+  ],
+  "final": [
+    {
+      "model": "GRU",
+      "learning_rate": 0.001,
+      "seed": 2026,
+      "best_epoch": 29,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.6145750542873832,
+      "elapsed_seconds": 334.2162139415741,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false,
+      "test": {
+        "Hit@5": 0.7261736995577299,
+        "Hit@10": 0.8276121850266337,
+        "MRR@10": 0.5357953481527626,
+        "NDCG@10": 0.6060536233198828
+      },
+      "template_unseen_test": {
+        "Hit@5": 0.714799035446392,
+        "Hit@10": 0.8193463529008091,
+        "MRR@10": 0.5234807289735378,
+        "NDCG@10": 0.5946623325072009
+      }
+    },
+    {
+      "model": "GRU",
+      "learning_rate": 0.001,
+      "seed": 2027,
+      "best_epoch": 28,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.6163676710776358,
+      "elapsed_seconds": 275.37021470069885,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false,
+      "test": {
+        "Hit@5": 0.7315536174851764,
+        "Hit@10": 0.8322121478015014,
+        "MRR@10": 0.5400091986593888,
+        "NDCG@10": 0.6103691606345336
+      },
+      "template_unseen_test": {
+        "Hit@5": 0.7212516322115156,
+        "Hit@10": 0.8250745813437033,
+        "MRR@10": 0.5284001324075095,
+        "NDCG@10": 0.5997798661119094
+      }
+    },
+    {
+      "model": "GRU",
+      "learning_rate": 0.001,
+      "seed": 2028,
+      "best_epoch": 30,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.6176684100394331,
+      "elapsed_seconds": 639.2675397396088,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false,
+      "test": {
+        "Hit@5": 0.7253937444051513,
+        "Hit@10": 0.8287378021218326,
+        "MRR@10": 0.5371510864856872,
+        "NDCG@10": 0.6073209236629624
+      },
+      "template_unseen_test": {
+        "Hit@5": 0.7149324717162764,
+        "Hit@10": 0.821204929517056,
+        "MRR@10": 0.5247778066738407,
+        "NDCG@10": 0.5960618385075396
+      }
+    },
+    {
+      "model": "Transformer",
+      "learning_rate": 0.001,
+      "seed": 2026,
+      "best_epoch": 29,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.6109170870554298,
+      "elapsed_seconds": 667.7406346797943,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false,
+      "test": {
+        "Hit@5": 0.7331401171705354,
+        "Hit@10": 0.8403573612699088,
+        "MRR@10": 0.5304010628155115,
+        "NDCG@10": 0.6050730336113493
+      },
+      "template_unseen_test": {
+        "Hit@5": 0.723215051611243,
+        "Hit@10": 0.8333762235629391,
+        "MRR@10": 0.5188686979539924,
+        "NDCG@10": 0.5945793383588542
+      }
+    },
+    {
+      "model": "Transformer",
+      "learning_rate": 0.001,
+      "seed": 2027,
+      "best_epoch": 29,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.6111543998821878,
+      "elapsed_seconds": 623.8232710361481,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false,
+      "test": {
+        "Hit@5": 0.7348861531371037,
+        "Hit@10": 0.8417400090403893,
+        "MRR@10": 0.5323696617422854,
+        "NDCG@10": 0.6068735221884233
+      },
+      "template_unseen_test": {
+        "Hit@5": 0.7253214384429894,
+        "Hit@10": 0.8348344913695327,
+        "MRR@10": 0.5208583961293195,
+        "NDCG@10": 0.5964217073171869
+      }
+    },
+    {
+      "model": "Transformer",
+      "learning_rate": 0.001,
+      "seed": 2028,
+      "best_epoch": 27,
+      "epochs_run": 30,
+      "best_validation_NDCG@10": 0.6067275611700017,
+      "elapsed_seconds": 938.9404141902924,
+      "max_epochs": 30,
+      "patience": 5,
+      "checkpoint_selection": "validation NDCG@10 only",
+      "test_used_for_tuning": false,
+      "test": {
+        "Hit@5": 0.7297721290116728,
+        "Hit@10": 0.8378136438972941,
+        "MRR@10": 0.525682481861189,
+        "NDCG@10": 0.60088848122365
+      },
+      "template_unseen_test": {
+        "Hit@5": 0.7201555485660367,
+        "Hit@10": 0.8308599967594049,
+        "MRR@10": 0.5140621026318565,
+        "NDCG@10": 0.5903432759025676
+      }
+    }
+  ],
+  "aggregate": {
+    "GRU": {
+      "test": {
+        "Hit@5": {
+          "mean": 0.7277070204826859,
+          "std": 0.0033539996846579435
+        },
+        "Hit@10": {
+          "mean": 0.8295207116499892,
+          "std": 0.0023978375423495844
+        },
+        "MRR@10": {
+          "mean": 0.5376518777659461,
+          "std": 0.002151099242907205
+        },
+        "NDCG@10": {
+          "mean": 0.6079145692057929,
+          "std": 0.002218169707535438
+        }
+      },
+      "template_unseen_test": {
+        "Hit@5": {
+          "mean": 0.7169943797913946,
+          "std": 0.0036874923641953706
+        },
+        "Hit@10": {
+          "mean": 0.8218752879205228,
+          "std": 0.002922359588640517
+        },
+        "MRR@10": {
+          "mean": 0.5255528893516294,
+          "std": 0.0025496465254225185
+        },
+        "NDCG@10": {
+          "mean": 0.5968346790422167,
+          "std": 0.0026448533830554775
+        }
+      }
+    },
+    "Transformer": {
+      "test": {
+        "Hit@5": {
+          "mean": 0.7325994664397705,
+          "std": 0.0025995265142675084
+        },
+        "Hit@10": {
+          "mean": 0.8399703380691973,
+          "std": 0.001991588819923658
+        },
+        "MRR@10": {
+          "mean": 0.529484402139662,
+          "std": 0.0034365380525350794
+        },
+        "NDCG@10": {
+          "mean": 0.6042783456744742,
+          "std": 0.0030706392698043585
+        }
+      },
+      "template_unseen_test": {
+        "Hit@5": {
+          "mean": 0.7228973462067563,
+          "std": 0.002597557910467157
+        },
+        "Hit@10": {
+          "mean": 0.8330235705639589,
+          "std": 0.002010578263771636
+        },
+        "MRR@10": {
+          "mean": 0.5179297322383895,
+          "std": 0.0034940869747650573
+        },
+        "NDCG@10": {
+          "mean": 0.593781440526203,
+          "std": 0.0031167792397072134
+        }
+      }
+    }
+  }
+}

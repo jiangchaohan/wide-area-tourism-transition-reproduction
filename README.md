@@ -1,6 +1,16 @@
-# Transition-probability framework for route organization
+# Xinjiang tourism route-product data and reproducibility materials
 
-This anonymous repository contains the data and English-language Python code needed to reproduce the empirical results in the manuscript *Beyond Popularity: A Transition-Probability Framework for Explaining Route Organization in a Wide-Area Destination*.
+## Current revision — 6 October 2026
+
+The current materials for *Context-dependent attraction connectivity in destination route products: Evidence from Xinjiang, China* are in **[jdmm_release_20261006](jdmm_release_20261006/README.md)**. Use that directory for the revised manuscript, not the legacy root-level outputs.
+
+The revised analysis contains 33,266 routes, 1,034 attraction states and 736,883 successor events. Its processed S2 table contains 33,269 records before excluding three January 1970 records; the unused free-text `route_title` column is withheld throughout. The release includes processed S2/S3 data, reproducibility scripts, validation-selected three-seed neural comparisons, statistical and sensitivity results, actual checkpoints and predictions, and a SHA256 manifest. No new original administrative export is included. No additional open reuse license or formal ethics exemption is asserted.
+
+This account and URL identify an author; the repository is **not an anonymous review link**. Legacy raw files and free-text tables remain in the repository and its history and have not been certified privacy-screened by the current revision. Their presence does not expand permission to redistribute them. The current privacy-reviewed data entry point is the versioned directory above. No Git-history rewrite was performed.
+
+## Legacy archive — not the revised manuscript
+
+The remaining root-level materials relate to the earlier manuscript *Beyond Popularity: A Transition-Probability Framework for Explaining Route Organization in a Wide-Area Destination*. The following structure and deterministic reproduction instructions describe only that earlier version, not the current strengthened experiments.
 
 ## Repository structure
 
@@ -28,9 +38,9 @@ The workflow uses complete-route chronological splits (70% training, 15% validat
 
 Great-circle distance is a spatial approximation, not road distance or driving time. Route-channel outputs are explanatory candidates rather than road-time-constrained optimized itineraries. Stationary probability is interpreted as random-walk structural importance rather than realized demand or future visitor volume.
 
-## Anonymity and privacy
+## Legacy privacy caveat
 
-No author names, affiliations, email addresses or direct personal identifiers are included. Excel metadata are set to `Anonymous`. The records are supplied for scholarly verification and must be handled in accordance with applicable data-provider conditions.
+Legacy Excel metadata marked `Anonymous` do not establish that the contents are anonymous or free of personal information. Legacy raw records and free-text titles have not been certified by the current privacy review. Use the processed tables in the versioned revision, and observe data-provider conditions. Removal of old files or history requires a separate, precisely scoped decision.
 
 ## Availability
 
